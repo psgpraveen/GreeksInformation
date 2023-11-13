@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Header from "../../components/header";
 
 const Cart = () => {
   const navigate = useNavigate()
@@ -48,10 +49,15 @@ const Cart = () => {
   }
 
   if(carts.length === 0) {
-    return <div className=' h-[55vh] flex justify-center items-center text-4xl '>Cart is Empty</div>
+    return<>
+     <Header/>
+     <div className=' h-[55vh] flex justify-center items-center text-4xl '>Cart is Empty</div>
+    </>
   }
 
   return (
+   <>
+    <Header/>
     <div className="container mx-auto mt-10">
       <div className="flex shadow-md my-10">
         <div className="w-3/4 bg-white px-10 py-10">
@@ -130,7 +136,7 @@ const Cart = () => {
         </div>
 
       </div>
-    </div>
+    </div></>
   )
 }
 

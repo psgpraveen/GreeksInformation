@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ProductCard from '../../components/productCard';
+import Header from "../../components/header";
 
 const categoryProducts = () => {
     const {name} = useParams([]);
@@ -14,8 +15,9 @@ const categoryProducts = () => {
     };
     fetchProducts();
   }, []);
-  return (
+  return (<><Header/>
    <ProductCard products={products}/>
+  </>
   )
 }
 

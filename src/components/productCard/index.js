@@ -9,7 +9,7 @@ const ProductCard = ({ products = [] }) => {
           {products.map((product) => {
             const { title, price, category, images ,id} = product;
             return (
-              <Link to={`/products/${id}`} className="lg:w-1/5 md:w-1/2 p-4 w-full border border-opacity-60 p-2 ml-5 mb-3 cursor-pointer" key={title}>
+              <Link to={`/products/${id}`} className="lg:w-1/5 md:w-1/2 p-4 border border-opacity-60 p-2 ml-5 mb-3 cursor-pointer" key={title}>
                 <a className="block relative h-48 rounded overflow-hidden">
                   <img alt={title} className="object-fill p-3 object-center w-full h-full block" src={images[0]} />
                 </a>

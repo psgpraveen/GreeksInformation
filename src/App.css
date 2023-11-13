@@ -28,11 +28,23 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:375px) {
+  .mr-3 {
+    margin-right: 3.8rem !important;
+}
+.border-t-2 {
+  margin-top: 10rem !important;
+}
+.text-center {
+  text-align: start !important;
+}.mb-6 {
+  margin-bottom: 0.5rem !important;
+}.min-h-\[1rem\] {
+  min-height: 4rem !important;
+}.p1{
+  padding: 0.25rem !important;
+}.p2{
+  padding: 0.25rem !important;
+}
+  
 }

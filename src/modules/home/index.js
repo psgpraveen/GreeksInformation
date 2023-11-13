@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import PSG from "../../components/shreya";
+import PSG from "../../components/praveen";
+import Header from "../../components/header";
 import Product from "../../components/productCard";
 import Stat from "../../components/stat";
 import Categories from "../../components/categories";
@@ -15,7 +16,7 @@ const Home = () => {
     fetchProducts();
   }, []);
   return (  
-    <>
+    <> <Header/>
       <PSG />
     <Categories />
       <div className="flex flex-col text-center w-full">
